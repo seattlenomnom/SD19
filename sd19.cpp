@@ -26,12 +26,11 @@ int main() {
 
     std::cout << "Enter an integer from 0 to 100: ";
     std::cin >> x;
-    std::cout << "\n";
 
     transx  = xform(x);
 
     std::cout << "x is " << x;
-    std::cout << " , the transformation of x is " << transx << "\n";
+    std::cout << ", the transformation of x is " << transx << "\n";
 
 
 
@@ -44,9 +43,9 @@ int xform(int x) {
     int xform_value = 0;
 
     if(x <= 40 || x >= 100) {
-        xform_value = 1;
-    }else{
         xform_value = 0;
+    }else{
+        xform_value = 1;
     }
 
     return xform_value;
